@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - GenSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-earth-americas"></i> GenSpeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="lessons.html" style="color:var(--primary-light)">Lessons</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <a href="#" id="logoutBtn" class="btn btn-outline" style="display:none;">Logout</a>
+    </nav>
+
+    <div style="max-width: 1000px; margin: 60px auto; padding: 0 5%;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 40px;">
+            <h2>Language <span class="gradient-text">Lessons</span></h2>
+            <select id="languageSelect"
+                style="padding:10px 20px; border-radius:8px; background:var(--bg-card); color:white; border:1px solid rgba(255,255,255,0.2); font-size:1.1rem; outline:none;">
+                <option value="spanish">🇪🇸 Spanish</option>
+                <option value="french">🇫🇷 French</option>
+                <option value="hindi">🇮🇳 Hindi</option>
+                <option value="japanese">🇯🇵 Japanese</option>
+                <option value="german">🇩🇪 German</option>
+            </select>
+        </div>
+
+        <div id="lessonsContainer" style="display: grid; gap: 20px;">
+            <div style="text-align:center; padding:50px;"><i class="fa-solid fa-spinner fa-spin fa-2x"></i> Loading...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', fetchLessons);
+        document.getElementById('languageSelect').addEventListener('change', fetchLessons);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GenSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-earth-americas"></i> GenSpeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="auth-container">
+        <h2>Welcome Back to <span class="gradient-text">GenSpeak</span></h2>
+
+        <div id="loginError" style="color:var(--danger); margin-bottom:15px; text-align:center; display:none;">
+            Invalid credentials!
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large" style="width:100%; margin-top:10px;">
+                Login
+            </button>
+        </form>
+
+        <div style="text-align:center; margin-top:20px; color:var(--text-muted)">
+            Don't have an account? <a href="signup.html" style="color:var(--primary-light)">Sign up</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', handleLogin);
+    </script>
+</body>
+</html>

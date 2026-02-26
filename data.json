@@ -1,0 +1,425 @@
+{
+  "users": {
+    "testuser@example.com": {
+      "password": "password123",
+      "name": "Jane Learner",
+      "plan": "Pro",
+      "streak": 15,
+      "accuracy": 92,
+      "completedLessons": 42,
+      "lastActiveDate": ""
+    }
+  },
+  "lessons": {
+    "spanish": [
+      {
+        "id": 1,
+        "title": "Greetings & Basics",
+        "level": "Beginner",
+        "lang": "es-ES",
+        "words": [
+          { "word": "Hola", "meaning": "Hello", "pronunciation": "oh-lah" },
+          { "word": "Gracias", "meaning": "Thank you", "pronunciation": "grah-see-ahs" },
+          { "word": "Adiós", "meaning": "Goodbye", "pronunciation": "ah-dee-os" },
+          { "word": "Por favor", "meaning": "Please", "pronunciation": "por fah-vor" },
+          { "word": "Lo siento", "meaning": "I'm sorry", "pronunciation": "loh see-en-toh" }
+        ],
+        "sentences": [
+          { "sentence": "Hola, ¿cómo estás?", "meaning": "Hello, how are you?", "pronunciation": "oh-lah, coh-moh es-tahs" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Numbers & Time",
+        "level": "Beginner",
+        "lang": "es-ES",
+        "words": [
+          { "word": "Uno", "meaning": "One", "pronunciation": "oo-no" },
+          { "word": "Dos", "meaning": "Two", "pronunciation": "dohs" },
+          { "word": "Tres", "meaning": "Three", "pronunciation": "trehs" },
+          { "word": "Cuatro", "meaning": "Four", "pronunciation": "kwah-troh" },
+          { "word": "Cinco", "meaning": "Five", "pronunciation": "seen-koh" }
+        ],
+        "sentences": [
+          { "sentence": "Son las dos.", "meaning": "It is two o'clock.", "pronunciation": "son lahs dohs" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Food & Dining",
+        "level": "Intermediate",
+        "lang": "es-ES",
+        "words": [
+          { "word": "Agua", "meaning": "Water", "pronunciation": "ah-gwah" },
+          { "word": "Comida", "meaning": "Food", "pronunciation": "koh-mee-dah" },
+          { "word": "Pan", "meaning": "Bread", "pronunciation": "pahn" },
+          { "word": "Pollo", "meaning": "Chicken", "pronunciation": "poh-yoh" },
+          { "word": "Delicioso", "meaning": "Delicious", "pronunciation": "deh-lee-see-oh-so" }
+        ],
+        "sentences": [
+          { "sentence": "La cuenta, por favor.", "meaning": "The bill, please.", "pronunciation": "lah kwen-tah, por fah-vor" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Travel & Directions",
+        "level": "Intermediate",
+        "lang": "es-ES",
+        "words": [
+          { "word": "Aeropuerto", "meaning": "Airport", "pronunciation": "ah-eh-roh-pwer-toh" },
+          { "word": "Hotel", "meaning": "Hotel", "pronunciation": "oh-tel" },
+          { "word": "Derecha", "meaning": "Right", "pronunciation": "deh-reh-chah" },
+          { "word": "Izquierda", "meaning": "Left", "pronunciation": "ees-kee-er-dah" },
+          { "word": "Taxi", "meaning": "Taxi", "pronunciation": "tahk-see" }
+        ],
+        "sentences": [
+          { "sentence": "¿Dónde está el baño?", "meaning": "Where is the bathroom?", "pronunciation": "don-deh es-tah el bah-nyoh" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Family & Relationships",
+        "level": "Beginner",
+        "lang": "es-ES",
+        "words": [
+          { "word": "Madre", "meaning": "Mother", "pronunciation": "mah-dreh" },
+          { "word": "Padre", "meaning": "Father", "pronunciation": "pah-dreh" },
+          { "word": "Hermano", "meaning": "Brother", "pronunciation": "er-mah-noh" },
+          { "word": "Hermana", "meaning": "Sister", "pronunciation": "er-mah-nah" },
+          { "word": "Amigo", "meaning": "Friend", "pronunciation": "ah-mee-goh" }
+        ],
+        "sentences": [
+          { "sentence": "Mi familia es grande.", "meaning": "My family is big.", "pronunciation": "mee fah-mee-lyah es grahn-deh" }
+        ]
+      }
+    ],
+    "french": [
+      {
+        "id": 1,
+        "title": "Greetings & Basics",
+        "level": "Beginner",
+        "lang": "fr-FR",
+        "words": [
+          { "word": "Bonjour", "meaning": "Hello / Good morning", "pronunciation": "bon-zhoor" },
+          { "word": "Merci", "meaning": "Thank you", "pronunciation": "mehr-see" },
+          { "word": "Au revoir", "meaning": "Goodbye", "pronunciation": "oh reh-vwahr" },
+          { "word": "S'il vous plaît", "meaning": "Please", "pronunciation": "seel voo pleh" },
+          { "word": "Excusez-moi", "meaning": "Excuse me", "pronunciation": "ex-koo-zay mwah" }
+        ],
+        "sentences": [
+          { "sentence": "Comment allez-vous?", "meaning": "How are you?", "pronunciation": "koh-mahn tah-lay voo" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Numbers & Colors",
+        "level": "Beginner",
+        "lang": "fr-FR",
+        "words": [
+          { "word": "Un", "meaning": "One", "pronunciation": "uhn" },
+          { "word": "Deux", "meaning": "Two", "pronunciation": "duh" },
+          { "word": "Rouge", "meaning": "Red", "pronunciation": "roozh" },
+          { "word": "Bleu", "meaning": "Blue", "pronunciation": "bluh" },
+          { "word": "Vert", "meaning": "Green", "pronunciation": "vehr" }
+        ],
+        "sentences": [
+          { "sentence": "J'aime le bleu.", "meaning": "I like blue.", "pronunciation": "zhehm luh bluh" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Food & Café",
+        "level": "Intermediate",
+        "lang": "fr-FR",
+        "words": [
+          { "word": "Pain", "meaning": "Bread", "pronunciation": "pahn" },
+          { "word": "Café", "meaning": "Coffee", "pronunciation": "kah-fay" },
+          { "word": "Eau", "meaning": "Water", "pronunciation": "oh" },
+          { "word": "Fromage", "meaning": "Cheese", "pronunciation": "froh-mazh" },
+          { "word": "Délicieux", "meaning": "Delicious", "pronunciation": "day-lee-syuh" }
+        ],
+        "sentences": [
+          { "sentence": "Un café, s'il vous plaît.", "meaning": "A coffee, please.", "pronunciation": "uhn kah-fay, seel voo pleh" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Travel & Places",
+        "level": "Intermediate",
+        "lang": "fr-FR",
+        "words": [
+          { "word": "Aéroport", "meaning": "Airport", "pronunciation": "ah-ay-roh-por" },
+          { "word": "Hôtel", "meaning": "Hotel", "pronunciation": "oh-tel" },
+          { "word": "Gare", "meaning": "Train station", "pronunciation": "gar" },
+          { "word": "Droite", "meaning": "Right", "pronunciation": "drwaht" },
+          { "word": "Gauche", "meaning": "Left", "pronunciation": "gohsh" }
+        ],
+        "sentences": [
+          { "sentence": "Où est la tour Eiffel?", "meaning": "Where is the Eiffel Tower?", "pronunciation": "oo eh lah toor ay-fel" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Family & People",
+        "level": "Beginner",
+        "lang": "fr-FR",
+        "words": [
+          { "word": "Mère", "meaning": "Mother", "pronunciation": "mehr" },
+          { "word": "Père", "meaning": "Father", "pronunciation": "pehr" },
+          { "word": "Frère", "meaning": "Brother", "pronunciation": "frehr" },
+          { "word": "Sœur", "meaning": "Sister", "pronunciation": "suhr" },
+          { "word": "Ami", "meaning": "Friend", "pronunciation": "ah-mee" }
+        ],
+        "sentences": [
+          { "sentence": "J'ai une grande famille.", "meaning": "I have a big family.", "pronunciation": "zhay oon grond fah-mee" }
+        ]
+      }
+    ],
+    "hindi": [
+      {
+        "id": 1,
+        "title": "Greetings & Basics",
+        "level": "Beginner",
+        "lang": "hi-IN",
+        "words": [
+          { "word": "Namaste", "meaning": "Hello / Greetings", "pronunciation": "nah-mah-stay" },
+          { "word": "Dhanyavaad", "meaning": "Thank you", "pronunciation": "dhan-yah-vahd" },
+          { "word": "Alvida", "meaning": "Goodbye", "pronunciation": "al-vee-dah" },
+          { "word": "Haan", "meaning": "Yes", "pronunciation": "haan" },
+          { "word": "Nahi", "meaning": "No", "pronunciation": "nah-hee" }
+        ],
+        "sentences": [
+          { "sentence": "Aap kaise hain?", "meaning": "How are you?", "pronunciation": "aap kay-say hain" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Numbers & Days",
+        "level": "Beginner",
+        "lang": "hi-IN",
+        "words": [
+          { "word": "Ek", "meaning": "One", "pronunciation": "ehk" },
+          { "word": "Do", "meaning": "Two", "pronunciation": "doh" },
+          { "word": "Teen", "meaning": "Three", "pronunciation": "teen" },
+          { "word": "Char", "meaning": "Four", "pronunciation": "chaar" },
+          { "word": "Paanch", "meaning": "Five", "pronunciation": "paanch" }
+        ],
+        "sentences": [
+          { "sentence": "Aaj somvar hai.", "meaning": "Today is Monday.", "pronunciation": "aaj som-vaar hai" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Food & Drinks",
+        "level": "Intermediate",
+        "lang": "hi-IN",
+        "words": [
+          { "word": "Paani", "meaning": "Water", "pronunciation": "paa-nee" },
+          { "word": "Roti", "meaning": "Bread / Flatbread", "pronunciation": "roh-tee" },
+          { "word": "Chawal", "meaning": "Rice", "pronunciation": "chah-wahl" },
+          { "word": "Daal", "meaning": "Lentils", "pronunciation": "daal" },
+          { "word": "Meetha", "meaning": "Sweet", "pronunciation": "mee-thah" }
+        ],
+        "sentences": [
+          { "sentence": "Mujhe bhooh lagi hai.", "meaning": "I am hungry.", "pronunciation": "moo-jheh bhookh lah-gee hai" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Colors & Nature",
+        "level": "Beginner",
+        "lang": "hi-IN",
+        "words": [
+          { "word": "Laal", "meaning": "Red", "pronunciation": "laal" },
+          { "word": "Neela", "meaning": "Blue", "pronunciation": "nee-lah" },
+          { "word": "Hara", "meaning": "Green", "pronunciation": "hah-rah" },
+          { "word": "Peela", "meaning": "Yellow", "pronunciation": "pee-lah" },
+          { "word": "Safed", "meaning": "White", "pronunciation": "sah-fed" }
+        ],
+        "sentences": [
+          { "sentence": "Aasman neela hai.", "meaning": "The sky is blue.", "pronunciation": "aas-maan nee-lah hai" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Family & Relations",
+        "level": "Beginner",
+        "lang": "hi-IN",
+        "words": [
+          { "word": "Maa", "meaning": "Mother", "pronunciation": "maa" },
+          { "word": "Baap", "meaning": "Father", "pronunciation": "baap" },
+          { "word": "Bhai", "meaning": "Brother", "pronunciation": "bhai" },
+          { "word": "Behen", "meaning": "Sister", "pronunciation": "beh-hen" },
+          { "word": "Dost", "meaning": "Friend", "pronunciation": "dost" }
+        ],
+        "sentences": [
+          { "sentence": "Mera parivaar bada hai.", "meaning": "My family is big.", "pronunciation": "meh-rah pah-ree-vaar bah-dah hai" }
+        ]
+      }
+    ],
+    "japanese": [
+      {
+        "id": 1,
+        "title": "Greetings & Basics",
+        "level": "Beginner",
+        "lang": "ja-JP",
+        "words": [
+          { "word": "Konnichiwa", "meaning": "Hello", "pronunciation": "kon-nee-chee-wah" },
+          { "word": "Arigatou", "meaning": "Thank you", "pronunciation": "ah-ree-gah-toh" },
+          { "word": "Sayonara", "meaning": "Goodbye", "pronunciation": "sah-yoh-nah-rah" },
+          { "word": "Hai", "meaning": "Yes", "pronunciation": "hai" },
+          { "word": "Iie", "meaning": "No", "pronunciation": "ee-eh" }
+        ],
+        "sentences": [
+          { "sentence": "Ohayou gozaimasu", "meaning": "Good morning", "pronunciation": "oh-hah-yoh goh-zai-mahs" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Numbers & Counting",
+        "level": "Beginner",
+        "lang": "ja-JP",
+        "words": [
+          { "word": "Ichi", "meaning": "One", "pronunciation": "ee-chee" },
+          { "word": "Ni", "meaning": "Two", "pronunciation": "nee" },
+          { "word": "San", "meaning": "Three", "pronunciation": "sahn" },
+          { "word": "Shi", "meaning": "Four", "pronunciation": "shee" },
+          { "word": "Go", "meaning": "Five", "pronunciation": "goh" }
+        ],
+        "sentences": [
+          { "sentence": "Mittsu kudasai", "meaning": "Three please", "pronunciation": "meet-soo koo-dah-sai" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Food & Restaurant",
+        "level": "Intermediate",
+        "lang": "ja-JP",
+        "words": [
+          { "word": "Mizu", "meaning": "Water", "pronunciation": "mee-zoo" },
+          { "word": "Ramen", "meaning": "Noodle soup", "pronunciation": "rah-men" },
+          { "word": "Sushi", "meaning": "Sushi", "pronunciation": "soo-shee" },
+          { "word": "Oishii", "meaning": "Delicious", "pronunciation": "oh-ee-shee" },
+          { "word": "Okaikei", "meaning": "Bill / Check", "pronunciation": "oh-kai-keh" }
+        ],
+        "sentences": [
+          { "sentence": "Itadakimasu", "meaning": "Let's eat (before eating)", "pronunciation": "ee-tah-dah-kee-mahs" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Travel & Directions",
+        "level": "Intermediate",
+        "lang": "ja-JP",
+        "words": [
+          { "word": "Eki", "meaning": "Train station", "pronunciation": "eh-kee" },
+          { "word": "Hoteru", "meaning": "Hotel", "pronunciation": "hoh-teh-roo" },
+          { "word": "Migi", "meaning": "Right", "pronunciation": "mee-gee" },
+          { "word": "Hidari", "meaning": "Left", "pronunciation": "hee-dah-ree" },
+          { "word": "Chizu", "meaning": "Map", "pronunciation": "chee-zoo" }
+        ],
+        "sentences": [
+          { "sentence": "Toire wa doko desu ka?", "meaning": "Where is the bathroom?", "pronunciation": "toi-reh wah doh-koh deh-soo kah" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Emotions & Feelings",
+        "level": "Beginner",
+        "lang": "ja-JP",
+        "words": [
+          { "word": "Ureshii", "meaning": "Happy", "pronunciation": "oo-reh-shee" },
+          { "word": "Kanashii", "meaning": "Sad", "pronunciation": "kah-nah-shee" },
+          { "word": "Kowai", "meaning": "Scared", "pronunciation": "koh-wai" },
+          { "word": "Tanoshii", "meaning": "Fun", "pronunciation": "tah-noh-shee" },
+          { "word": "Tsukareta", "meaning": "Tired", "pronunciation": "tsoo-kah-reh-tah" }
+        ],
+        "sentences": [
+          { "sentence": "Totemo ureshii desu.", "meaning": "I am very happy.", "pronunciation": "toh-teh-moh oo-reh-shee deh-soo" }
+        ]
+      }
+    ],
+    "german": [
+      {
+        "id": 1,
+        "title": "Greetings & Basics",
+        "level": "Beginner",
+        "lang": "de-DE",
+        "words": [
+          { "word": "Hallo", "meaning": "Hello", "pronunciation": "hah-loh" },
+          { "word": "Danke", "meaning": "Thank you", "pronunciation": "dahn-keh" },
+          { "word": "Auf Wiedersehen", "meaning": "Goodbye", "pronunciation": "owf vee-der-zay-en" },
+          { "word": "Bitte", "meaning": "Please", "pronunciation": "bit-eh" },
+          { "word": "Entschuldigung", "meaning": "Excuse me", "pronunciation": "ent-shool-dee-goong" }
+        ],
+        "sentences": [
+          { "sentence": "Wie geht es Ihnen?", "meaning": "How are you?", "pronunciation": "vee gayt es ee-nen" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Numbers & Time",
+        "level": "Beginner",
+        "lang": "de-DE",
+        "words": [
+          { "word": "Eins", "meaning": "One", "pronunciation": "einz" },
+          { "word": "Zwei", "meaning": "Two", "pronunciation": "tsvai" },
+          { "word": "Drei", "meaning": "Three", "pronunciation": "drai" },
+          { "word": "Vier", "meaning": "Four", "pronunciation": "feer" },
+          { "word": "Fünf", "meaning": "Five", "pronunciation": "fuenf" }
+        ],
+        "sentences": [
+          { "sentence": "Es ist zwei Uhr.", "meaning": "It is two o'clock.", "pronunciation": "es ist tsvai oor" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Food & Dining",
+        "level": "Intermediate",
+        "lang": "de-DE",
+        "words": [
+          { "word": "Wasser", "meaning": "Water", "pronunciation": "vah-ser" },
+          { "word": "Brot", "meaning": "Bread", "pronunciation": "broht" },
+          { "word": "Fleisch", "meaning": "Meat", "pronunciation": "flaish" },
+          { "word": "Lecker", "meaning": "Delicious", "pronunciation": "leh-ker" },
+          { "word": "Rechnung", "meaning": "Bill", "pronunciation": "rech-noong" }
+        ],
+        "sentences": [
+          { "sentence": "Die Rechnung, bitte.", "meaning": "The bill, please.", "pronunciation": "dee rech-noong, bit-eh" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Travel & Transport",
+        "level": "Intermediate",
+        "lang": "de-DE",
+        "words": [
+          { "word": "Flughafen", "meaning": "Airport", "pronunciation": "floog-hah-fen" },
+          { "word": "Bahnhof", "meaning": "Train station", "pronunciation": "bahn-hohf" },
+          { "word": "Rechts", "meaning": "Right", "pronunciation": "rechts" },
+          { "word": "Links", "meaning": "Left", "pronunciation": "links" },
+          { "word": "Karte", "meaning": "Map / Ticket", "pronunciation": "kar-teh" }
+        ],
+        "sentences": [
+          { "sentence": "Wo ist der Bahnhof?", "meaning": "Where is the train station?", "pronunciation": "voh ist dehr bahn-hohf" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Family & People",
+        "level": "Beginner",
+        "lang": "de-DE",
+        "words": [
+          { "word": "Mutter", "meaning": "Mother", "pronunciation": "moo-ter" },
+          { "word": "Vater", "meaning": "Father", "pronunciation": "fah-ter" },
+          { "word": "Bruder", "meaning": "Brother", "pronunciation": "broo-der" },
+          { "word": "Schwester", "meaning": "Sister", "pronunciation": "shves-ter" },
+          { "word": "Freund", "meaning": "Friend", "pronunciation": "froynd" }
+        ],
+        "sentences": [
+          { "sentence": "Meine Familie ist groß.", "meaning": "My family is big.", "pronunciation": "mai-neh fah-mee-lee ist grohs" }
+        ]
+      }
+    ]
+  }
+}

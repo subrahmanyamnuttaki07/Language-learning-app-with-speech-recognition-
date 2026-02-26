@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - GenSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-earth-americas"></i> GenSpeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html" style="color:var(--primary-light)">Practice</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <a href="#" id="logoutBtn" class="btn btn-outline" style="display:none;">Logout</a>
+    </nav>
+
+    <div class="practice-container">
+        <h2 style="margin-bottom: 20px;">Pronunciation <span class="gradient-text">Practice</span></h2>
+        <p style="color:var(--text-muted); margin-bottom: 40px;">Listen to the pronunciation and try speaking it
+            yourself! Our AI will score you.</p>
+
+        <div class="word-card">
+            <div class="target-word" id="targetWord">...</div>
+            <div class="word-meaning" id="wordMeaning">...</div>
+            <div class="word-pronunciation" id="wordPronunciation">...</div>
+
+            <div class="controls">
+                <button class="btn btn-icon btn-outline" id="listenBtn" title="Listen"><i
+                        class="fa-solid fa-volume-high"></i></button>
+                <button class="btn btn-icon btn-mic" id="recordBtn" title="Speak"><i
+                        class="fa-solid fa-microphone"></i></button>
+                <button class="btn btn-icon btn-outline" id="skipBtn" title="Next Word"><i
+                        class="fa-solid fa-forward"></i></button>
+            </div>
+
+            <div class="feedback-box" id="feedbackBox">
+                Click the microphone to start practicing.
+            </div>
+        </div>
+
+        <div
+            style="text-align: left; background: var(--bg-card); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+            <h3>Translation Tool <i class="fa-solid fa-language"></i></h3>
+            <p style="color:var(--text-muted);font-size: 0.9rem;margin-bottom: 15px;">Translate back and forth and view
+                definitions easily.</p>
+
+            <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                <input type="text" id="translateInput" placeholder="Enter word to translate..."
+                    style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); background:rgba(0,0,0,0.2); color:white;">
+                <button class="btn btn-primary" id="translateBtn">Translate</button>
+            </div>
+            <div id="translateResult"
+                style="padding: 15px; background: rgba(99, 102, 241, 0.1); border-left: 4px solid var(--primary); border-radius: 4px; font-weight:600;">
+                Translation will appear here.
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Init practice logic on this page
+        document.addEventListener('DOMContentLoaded', () => {
+            initPracticeMode();
+            initTranslator();
+        });
+    </script>
+</body>
+
+</html>

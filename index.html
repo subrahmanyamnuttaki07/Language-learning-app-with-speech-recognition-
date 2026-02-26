@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenSpeak - Next-Gen Language Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-earth-americas"></i> GenSpeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <a href="login.html" class="btn btn-primary">Login</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">🚀 Limited Time Offer: 50% OFF Pro Plans</div>
+            <h1>Speak any language with <br><span class="gradient-text">AI Precision</span></h1>
+            <p>Master languages faster through real-time speech recognition, native pronunciation feedback, and interactive AI scenarios.</p>
+            <div class="hero-buttons">
+                <a href="login.html" class="btn btn-large btn-gradient">Start Learning Today</a>
+                <a href="#pricing" class="btn btn-large btn-outline">View Pricing</a>
+            </div>
+            
+            <div class="mic-demo">
+                <div class="mic-pulse-ring"></div>
+                <button class="btn-mic" id="heroMicBtn"><i class="fa-solid fa-microphone"></i></button>
+                <div class="speech-result" id="heroSpeechResult">"Pruébalo..." (Try it out)</div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glass-card stat-card top-right">
+                <i class="fa-solid fa-fire text-orange"></i> 15 Day Streak!
+            </div>
+            <div class="glass-card stat-card bottom-left">
+                <i class="fa-solid fa-check-circle text-green"></i> 98% Pronunciation Accuracy
+            </div>
+            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" alt="Students learning" style="border-radius:24px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Why Choose <span class="gradient-text">GenSpeak</span></h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-microphone-lines"></i></div>
+                <h3>Voice Recognition</h3>
+                <p>Advanced Web Speech API detects your exact pronunciation and scores your accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-robot"></i></div>
+                <h3>AI Feedback</h3>
+                <p>Get instant corrections and hints on where your accent needs improvement using text string matching algorithms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-language"></i></div>
+                <h3>Instant Translation</h3>
+                <p>Practice translating back and forth and view definitions and usage examples seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Choose Your <span class="gradient-text">Journey</span></h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Basic Lessons</li>
+                    <li><i class="fa-solid fa-check"></i> Ads Supported</li>
+                    <li><i class="fa-solid fa-check"></i> Basic Speech Check</li>
+                    <li class="disabled"><i class="fa-solid fa-xmark"></i> Advanced Feedback</li>
+                </ul>
+                <a href="login.html" class="btn btn-outline">Get Started</a>
+            </div>
+            <div class="pricing-card premium">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Pro Plan</h3>
+                <div class="price">$9<span>/mo</span> <span class="original-price">$18</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Lessons</li>
+                    <li><i class="fa-solid fa-check"></i> Ad-Free Experience</li>
+                    <li><i class="fa-solid fa-check"></i> Advanced Speech Feedback</li>
+                    <li><i class="fa-solid fa-check"></i> AI Conversation Practice</li>
+                </ul>
+                <a href="login.html" class="btn btn-primary">Upgrade to Pro</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <div class="price">$19<span>/mo</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> All Pro Features</li>
+                    <li><i class="fa-solid fa-check"></i> All Languages Unlocked</li>
+                    <li><i class="fa-solid fa-check"></i> Offline Access</li>
+                    <li><i class="fa-solid fa-check"></i> Certificates</li>
+                </ul>
+                <a href="login.html" class="btn btn-outline">Choose Premium</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3>Join the GenSpeak Newsletter</h3>
+                <p>Get weekly language tips and exclusive offers.</p>
+                <form class="email-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2026 Genspeak App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

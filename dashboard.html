@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GenSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-earth-americas"></i> GenSpeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="dashboard.html" style="color:var(--primary-light)">Dashboard</a></li>
+        </ul>
+        <a href="#" id="logoutBtn" class="btn btn-outline" style="display:none;">Logout</a>
+    </nav>
+
+    <div class="dashboard-grid">
+        <aside class="sidebar">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <div style="width:100px; height:100px; border-radius:50%; background:var(--gradient); margin:0 auto 15px; display:flex; align-items:center; justify-content:center; font-size:2.5rem; font-weight:700;">
+                    <span id="userInitial">J</span>
+                </div>
+                <h3 id="userName">Jane Learner</h3>
+                <p style="color:var(--text-muted); font-size:0.9rem;" id="userPlan">Pro Plan</p>
+            </div>
+
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:15px;">
+                <li><a href="#" style="color:white; text-decoration:none;"><i class="fa-solid fa-chart-pie" style="width:30px; color:var(--primary-light)"></i> Overview</a></li>
+                <li><a href="lessons.html" style="color:var(--text-muted); text-decoration:none;"><i class="fa-solid fa-book" style="width:30px;"></i> My Courses</a></li>
+                <li><a href="#" style="color:var(--text-muted); text-decoration:none;"><i class="fa-solid fa-certificate" style="width:30px;"></i> Certificates</a></li>
+                <li><a href="#" style="color:var(--text-muted); text-decoration:none;"><i class="fa-solid fa-gear" style="width:30px;"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2 style="margin-bottom: 30px;">Welcome back, <span class="gradient-text" id="welcomeName">Jane</span>!</h2>
+
+            <div class="stats-overview">
+                <div class="stat-box">
+                    <h4>Current Streak</h4>
+                    <div class="value"><span id="streakVal">0</span> <i class="fa-solid fa-fire text-orange" style="font-size:1.5rem;"></i></div>
+                </div>
+                <div class="stat-box">
+                    <h4>Accuracy</h4>
+                    <div class="value"><span id="accuracyVal">0</span>%</div>
+                </div>
+                <div class="stat-box">
+                    <h4>Lessons Done</h4>
+                    <div class="value" id="lessonsVal">0</div>
+                </div>
+            </div>
+
+            <div style="background:var(--bg-card); padding:30px; border-radius:20px; border:1px solid rgba(255,255,255,0.05); margin-bottom:30px;">
+                <h3>Current Goal Progress</h3>
+                <p style="color:var(--text-muted); margin-bottom: 20px;">
+                    Lessons Completed: <span id="goalProgress">0</span>/10
+                </p>
+                <div class="progress-container" style="height: 15px; border-radius: 20px;">
+                    <div class="progress-fill" id="progressFill" style="width: 0%; border-radius: 20px;"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadDashboard);
+    </script>
+</body>
+
+</html>
